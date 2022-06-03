@@ -1,6 +1,6 @@
 # action.yml
-name: 'Export .unitypackage from Unity Project'
-description: 'Uses Unity Package Exporter by Lachee to export a .unitypackage file from a Unity Project.'
+name: 'VRLabs Unity Exporter'
+description: 'Uses Unity Package Exporter by Lachee to export a .unitypackage file from a Unity Project. Updated by VRLabs since the original author does not seem to mantain it'
 inputs:
   unityProjectPath:
     description: 'Path to the unity project'
