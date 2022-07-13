@@ -6,6 +6,10 @@ inputs:
     description: 'Path to the unity project'
     required: true
     default: './'
+  packagePath:
+    description: 'Project relative path to be packaged.'
+    required: false
+    default: 'Assets'
   outputPackagePath:
     description: 'Path to the output package'
     required: false
@@ -18,4 +22,5 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.unityProjectPath }}
+    - ${{ inputs.packagePath }}
     - ${{ inputs.outputPackagePath }}
